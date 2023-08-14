@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/folha.css">
+    <title>Documento | folha </title>
+</head>
+<body>
+    <section class="container">
+        <section class="content">
+            <div class="folha">
+                <div class="imagem"><img src="img/fundo.jpg" alt="image"></div>
+                <div class="cdr">
+                    <!--  -->
+                   <div class="cards card1">
+                     <ul class="espaco1">
+                        <li><span class="codigoRenavam"></span></li>
+                        <li><span class="placaPlace"></span><span class="ano"></span></li>
+                        <li><span class="exercicioPlace"></span> <span class="modelo"></span></li>
+                        <li><span class="numeroDecrv"></span></li>
+                     </ul>
+                     <!--  -->
+
+
+                     <ul class="espaco01">
+                        <li><span class="codigoSeg"></span><!--  --><span id="cat" class="cat"><!--  --></span></li>
+                        <li><span class="marca"></span></li>
+                        <li><span class="especie"></span></li>
+                        <li><span class="PlacaAnt"></span><span class="chassi"></span></li>
+                        <li><span class="cor" id="corPredomin"></span><span class="combustivel"></span></li>
+                        <li class="obs"><span><!--  --></span></li>
+                     </ul>  
+                   </div>
+                   <!--  -->
+                   <div class="cards">
+                    <ul class="espaco2">
+                        <li><span class="Categoria"></span><span id="capacidade" class="capacidade"><!--  --></span></li>
+                        <li><span class="Potencia"></span><span class="capacidade experiencia"></span></li>
+                        <li><span class="motor"></span><span class="cmt"></span><span class="eixo"></span><span class="lotacao"></span></li>
+                        <li><span class="carroceira"></span></li>
+                        <li><span class="nomeEspace"></span></li>
+                        <li><span class="localEspace"></span></li>
+                        <li><span class="local"></span> <span class="date"></span></li>
+                     </ul>
+                   </div>
+                   <!--  -->
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="inputsContainer">
+        <section class="contentInputs">
+              <div class="buttons">
+                <button class="downloadButton" onclick="containerOpen()">Editar <b class="plus">+</b> <b class="less">-</b></button>
+                <button class="vizualizeButoon" onclick="imprimir()">Download</button>
+              </div>
+            <div class="formInpus">
+            <form action="#" class="formData">
+               <div class="inputBox">
+                <label for="#">Código Renavam</label>
+                <input type="text" placeholder="Cod..." id="inputCode">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Placa</label>
+                <input type="text" placeholder="Placa..." id="placaInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Exercicio</label>
+                <input type="text" placeholder="Placa..." id="exercicio">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Exercicio..." id="anoModelo">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Número de cv..." id="AnoFab">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Código de Segurança do Cla.." id="codDeseguran">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Cat..." id="catInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Marca/ Modelo / Versão..." id="marcaInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Especie..." id="especieInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Placa Anterior..." id="placaAnterior">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Chassi..." id="chassiInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Cor..." id="corinput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Combustivel..." id="combustivelInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Obs..." id="obsInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Ctegoria..." id="categoriaInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Capacidade..." id="capacidadeInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Potência..." id="potenciaInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Experiência..." id="experienciaInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Motor..." id="motorInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Cmt..." id="cmtInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Eixo..." id="eixoInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Lotação" id="lotacaoInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Nome..." id="momeInput" >
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="CPF..." id="localInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Carroceria" id="carroceriaInput" >
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Local..." id="localWedInput">
+               </div>
+
+               <div class="inputBox">
+                <label for="#">Nome</label>
+                <input type="text" placeholder="Data..." id="dataInputLOCAL">
+               </div>
+               
+            </form>
+            </div>
+        </section>
+    </section>
+    <script>
+        
+                    function imprimir() {
+
+            html2canvas(document.querySelector(".content")).then(canvas => {
+
+            const link = document.createElement("a");
+            link.download = "captura_de_tela.png";
+            link.href = canvas.toDataURL("image/png"); 
+            link.click();
+            });
+            }
+    </script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="js/folha.js"></script>
+</body>
+</html>

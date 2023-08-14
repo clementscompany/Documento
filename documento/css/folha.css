@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    position: relative;
+}
+span{
+    position: absolute;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: 'Calbri', sans-serif;
+    text-transform: uppercase;
+}
+/*//////////folha///////////*/
+.container{
+    overflow-y: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c;
+    top: 0%;
+    left: 0;
+}.container::-webkit-scrollbar{
+    width: 0px;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.content{
+    position:relative;
+    width: 30cm;
+    margin: 22px auto;
+}
+.folha{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.cdr{
+    grid-gap:3px;
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 1/2;
+}
+.cards{
+    grid:1;
+    height: 100%;
+}
+/* ///////////////////listas//////////////////////// */
+.espaco1{
+    margin-top: 180px;
+    padding-left: 55px;
+}
+.espaco1 li:nth-of-type(1){
+    padding-top: 12px;
+}
+.espaco1 li:nth-of-type(2){
+   margin-top: 22px;
+}
+.espaco1 li:nth-of-type(3){
+    padding-top: 28px;
+}
+.modelo{
+    margin-left: 133px;
+    margin-top: 44px;
+}
+.ano{
+    margin-top: 24px;
+    margin-left: 133px;
+}
+.capacidade{
+    margin-top: 22px;
+    margin-left: 360px;
+}
+.placaPlace{
+  margin-top: 24px;  
+}
+.exercicioPlace{
+    margin-top: 44px;
+}
+.Potencia{
+    margin-top: 22px;
+}
+/* //////////////////lista01//////////////////////////// */
+
+.espaco01{
+    margin-top: 245px;
+    padding-left: 55px;
+
+}
+.espaco01 li:nth-of-type(2){
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.espaco01 li:nth-of-type(3){
+    padding-top: 33px;
+    padding-left: 40px;
+}
+.espaco01 li:nth-of-type(4){
+    padding-top: 33px;
+    padding-left: 40px;
+}
+.espaco01 li:nth-of-type(5){
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.chassi{
+    margin-left: 170px;
+    margin-top: 84px;
+
+}
+.combustivel{
+   margin-left: 120px;
+    margin-top: 107px;
+}
+.cat{
+    margin-left:250px;
+}
+.obs{
+    position: relative;
+    margin-top: 190px;
+    margin-left: 28px;
+    height: 300px;
+    width: 450px;
+    overflow-wrap: break-word;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: 'Calbri', sans-serif;
+    text-transform: uppercase;
+}
+.marca{
+    margin-top: 24px;
+}
+.especie{
+    margin-top: 54px;
+}
+.PlacaAnt{
+    margin-top: 84px;
+}
+.cor{
+    margin-top: 107px;
+}
+/* //////////////////lista2//////////////////////////// */
+.espaco2{
+    margin-top: 130px;
+    padding-left: 40px;
+}
+.espaco2 li:nth-of-type(2){
+  padding-top: 60px;
+}
+.espaco2 li:nth-of-type(3){
+    padding-top: 75px;
+}
+.espaco2 li:nth-of-type(4){
+    padding-top: 50px;
+}
+.espaco2 li:nth-of-type(5){
+    padding-top: 50px;
+}
+.espaco2 li:nth-of-type(6){
+    padding-top: 60px;
+    padding-left: 280px;
+}
+.espaco2 li:nth-of-type(7){
+    padding-top: 40px;
+
+}
+.date{
+    margin-left: 360px;
+}
+.cmt{
+    margin-left: 255px;
+}
+.eixo{
+    margin-left: 350px;
+}
+.lotacao{
+    margin-left: 415px;
+}
+.nomeEspace{
+    margin-bottom: 5px;
+   
+}
+.localEspace{
+    margin-top: -3px;
+}
+.numeroDecrv{
+    margin-top: 90px;
+}
+/* //////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////inputs container//////////////////////////////////////////////////////// */
+
+.inputsContainer{
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    padding: 12px;
+    transform: translateY(100%);
+}
+.inputsContainer.active{
+    transform: translateY(0%);
+}
+
+.contentInputs{
+    position: relative;
+}
+.buttons{
+    background-color: #fff;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px 20px 0 0 ;
+    position: absolute;
+    top: -150px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 22px;
+}
+.buttons >button{
+    height: 33px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(22, 88, 22);
+    color: #fff;
+    font-size: 13pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttons >button:hover{
+    background-color: rgb(14, 131, 14);
+}
+.formInpus{
+    width: calc(100% - 100px);
+    height: 100vh;
+    background-color: #d8d8d842;
+    border-radius: 20px 20px 0 0 ;
+    padding: 12px;
+    margin: 0 auto;
+    position: relative;
+}
+.formInpus> form{
+    margin: 0 auto;
+    max-height: 350px;
+    padding: 12px;
+    border-radius: 20px 20px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 22px;
+    overflow-y: auto;
+}
+.formInpus> form::-webkit-scrollbar{
+    width: 0px;
+}
+.formInpus> form >*{
+    grid: 1 1 300px;
+}
+.formInpus> form > .inputBox{
+    height: 44px;
+}
+.formInpus> form > .inputBox input{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: rgb(53, 53, 53);
+    font-size: 13pt;
+    font-weight: bold;
+}
+.formInpus> form > .inputBox input:focus{
+    box-shadow: 0 4px 3px rgba(0, 128, 0, 0.322);
+    border: 2px solid green;
+}
+.formInpus> form > .inputBox input.active{
+    box-shadow: 0 4px 3px rgba(0, 128, 0, 0.322);
+    border: 2px solid green;
+}
+label{
+    margin-left: 12px;
+    margin-top: 12px;
+    color: green;
+    font-family: 'calibri', sans-serif;
+    font-weight: bold;
+}
+/* /////////////////////////////// */
+.downloadButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.less{
+    display: none;
+}
+.less.active{
+    display: block;
+}
+.plus.active{
+    display: none;
+}
